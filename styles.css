@@ -1,0 +1,11 @@
+.google-map {
+    padding-bottom: 10%;
+    position: relative;
+}
+
+.business-hours {
+    margin-top: 0px;
+    list-style: none;
+    padding: 5px;
+    display: inline-block;
+}
