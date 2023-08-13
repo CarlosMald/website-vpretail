@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+
+@font-face {
+    font-family: PT-Serif;
+    src: url("PTSerif/PTSerif-Regular.ttf") format("tff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
 .google-map {
     padding-bottom: 10%;
     position: relative;
@@ -8,4 +27,103 @@
     list-style: none;
     padding: 5px;
     display: inline-block;
+}
+
+.nav ul {
+    margin: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background-color: rgba(187, 178, 178, 0.678);
+}
+
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    margin-bottom: 0.5%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.main-nav li {
+    padding: 0 5%;
+}
+
+.store-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "PTSerif";
+    font-weight: normal;
+}
+
+.store-name-large {
+    font-size: 5em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1%;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em;
+    cursor: pointer;
+}
+
+.btn-div {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    font-size: 1em;
+    font-weight: normal;
+    padding-left: 2em;
+    padding-right: 2em;   
+    border-radius: 5%; 
+}
+
+.btn-header:hover {
+    background-color: rgba(109, 102, 102, 0.3);
+}
+
+.store-pic {
+    text-align: center;
+    margin: 2px auto 4em;
+}
+
+.contact-container {
+    margin: auto;
+}
+
+.google-map {
+    text-align: center;
+    margin-top: 50px;
 }
