@@ -11,8 +11,8 @@
             <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li>GALLERY</li>
-                    <li>ABOUT</li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </nav>
             <h1 class="store-name store-name-large">V&P Wholesale & Retail</h1>
@@ -20,41 +20,27 @@
 
         <section class="content-section container">
             <!--TODO: Center this text in CSS-->
-            <h2 class="section-header">Household Goods Wholesaler in San Bernardino
-                <br>
-                Open today until 7:00 PM
-            </h2>
+            <div class="description-container">
+                <span class="store-description">
+                    <h2 class="section-header">Household Goods Wholesaler</h2>
+                </span>
+                <span class="store-description">
+                    <h2 class="section-header">San Bernardino, CA</h2>
+                </span>
+            </div>
             <div class="btn-div">
-                <button class="btn btn-header" role="button">Get Quote</button>
-            </div>
-            <div class="store-pic">
-                <img src="vpstore.jpg" width="500">
-            </div>
-        </section>
-
-        <section class="content-section container">
-            <h3>Contact Us</h3>
-            <div class="google-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.3989376412887!2d-117.29033592386536!3d34.13613437312565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c353e4d12e4ec9%3A0x5d37980deaea70fc!2sV%26P%20WHOLESALE%20%26%20RETAIL%20216%20W%20HIGHLAND%20AVE%20SAN%20BERNARDINO%20CA%2092405!5e0!3m2!1sen!2sus!4v1688676775077!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-            </div>
-        </section>
-
-        <section class="content-section container">
-            <div class="contact-container">
-                <h4>Contact</h4>
-                <button role="button">CALL NOW</button>
-                (479) 306-3179
-            </div>
-
-            <div>
-                <h4>Address</h4>
-                <button role="button">GET DIRECTIONS</button>
-                216 West Highland Avenue San Bernardino, CA 92405
+                <button class="btn btn-header" role="button" id="contact_button">Contact Us</button>
             </div>
             
-            <div>
-                <h4>Business Hours</h4>
-                <ul class="business-hours">
+        </section>
+
+        <section class="content-section container hours-pic-container">
+            <div class="store-pic img-inline-block">
+                <img src="vpstore.jpg" width="500">
+            </div>
+            <div class="list-inline-block hours-list">
+                <h2 class="hours-header">Business Hours</h2>
+                <ul class="business-hours business-days">
                     <li>Monday</li>
                     <li>Tuesday</li>
                     <li>Wednesday</li>
@@ -70,12 +56,51 @@
                     <li>8:00 AM - 7:00 PM</li>
                     <li>8:00 AM - 7:00 PM</li>
                     <li>8:00 AM - 7:00 PM</li>
-                    <li>8:00 AM - 4:30 PM</li>
+                    <li>CLOSED</li>
                 </ul>
             </div>
         </section>
-    </body>
 
+        <section class="content-section container">
+            <h2 class="directions-header">Get Directions</h2>
+            <div class="google-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.3989376412887!2d-117.29033592386536!3d34.13613437312565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c353e4d12e4ec9%3A0x5d37980deaea70fc!2sV%26P%20WHOLESALE%20%26%20RETAIL%20216%20W%20HIGHLAND%20AVE%20SAN%20BERNARDINO%20CA%2092405!5e0!3m2!1sen!2sus!4v1688676775077!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
+        </section>
+
+
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="footer-name">V&P Wholesale & Retail</h3>
+                
+                <div class="contact-container">
+                    <h4 class="footer-titles">Contact</h4>
+                    <a href="tel:479-306-3179"><button role="button">CALL NOW</button></a>
+                    <div><span><a href="tel:479-306-3179">(479) 306-3179</a></span></div>
+                </div>
+    
+                <div class="address-container">
+                    <h4 class="footer-titles">Address</h4>
+                    <a href="https://maps.google.com/maps/dir//V%26P+WHOLESALE+%26+RETAIL+216+W+HIGHLAND+AVE+SAN+BERNARDINO+CA+92405+216+W+Highland+Ave+San+Bernardino,+CA+92405/@34.1361344,-117.287761,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x80c353e4d12e4ec9:0x5d37980deaea70fc" target="_blank">
+                        <button role="button">GET DIRECTIONS</button>
+                    </a>
+                    <div><span>216 W Highland Avenue</span></div>
+                    <div><span>San Bernardino, CA 92405</span></div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            document.getElementById("contact_button").addEventListener("click", function() {
+                // Create and display the popup
+                var popup = window.open("", "_blank", "width=600,height=600");
+                
+                // Replace 'YOUR_EMBED_CODE' with the actual Google Form embed code
+                popup.document.write('<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbSO94B-PrOdLpf4jrF8F63uQIi7O7_f83A-hzbd1E2Z34aQ/viewform?embedded=true" width="640" height="858" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>');
+            });
+        </script>
+            
+    </body>
 
 
 </html>

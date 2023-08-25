@@ -2,7 +2,14 @@
 
 @font-face {
     font-family: PT-Serif;
-    src: url("PTSerif/PTSerif-Regular.ttf") format("tff");
+    src: url("PTSerif/PTSerif-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(Lato/Lato-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -10,6 +17,13 @@
 * {
     box-sizing: border-box;
     font-family: Raleway;
+    
+}
+
+body {
+    background-color: #f5f3f5;
+    color:#1c1b18;
+
 }
 
 html, body {
@@ -20,6 +34,8 @@ html, body {
 .google-map {
     padding-bottom: 10%;
     position: relative;
+    text-align: center;
+    margin-top: 50px;
 }
 
 .business-hours {
@@ -27,6 +43,23 @@ html, body {
     list-style: none;
     padding: 5px;
     display: inline-block;
+    font-size: 1.4em;
+    line-height: 1.75em;
+}
+
+.business-days {
+    padding-left: 0;
+}
+
+.hours-header {
+    margin-top: 0;
+    text-align: center;
+}
+
+.hours-list {
+    vertical-align: top;
+    margin-top: 0;
+    margin-left: 1em;
 }
 
 .nav ul {
@@ -42,18 +75,25 @@ html, body {
     display: inline-block;
     padding: .5em;
     text-decoration: none;
+    color:#f5f3f5;
+}
+
+.nav a:visited {
+    color:#f5f3f5;
 }
 
 .nav a:hover {
-    background-color: rgba(187, 178, 178, 0.678);
+    background-color: #ffe90033;
 }
 
 .main-nav {
     text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
+    color: #f5f3f5;
+    font-size: 1.35em;
+    font-weight: bold;
     margin-bottom: 0.5%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: #710627;
 }
 
 .main-nav li {
@@ -70,6 +110,7 @@ html, body {
 
 .store-name-large {
     font-size: 5em;
+    margin-top: 2%;
 }
 
 .content-section {
@@ -77,15 +118,22 @@ html, body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 950px;
     margin: 0 auto;
     padding: 0 1.5em;
+}
+
+.hours-pic-container {
+    max-width: 950px;
+    padding: 1.3em;
+    margin-top: 50px;
 }
 
 .section-header {
     font-weight: normal;
     text-align: center;
     font-size: 2.5em;
+    margin-top: 2%;
     margin-bottom: 1%;
 }
 
@@ -117,13 +165,68 @@ html, body {
 .store-pic {
     text-align: center;
     margin: 2px auto 4em;
+    margin-right: 3.5em;
 }
 
 .contact-container {
     margin: auto;
+    line-height: 1.5em;
 }
 
-.google-map {
-    text-align: center;
-    margin-top: 50px;
+.address-container {
+    margin: auto;
+    line-height: 1.5em;
 }
+
+.description-container {
+    margin-top: 2%;
+    margin-bottom: 3.5%;
+}
+
+.store-description {
+    line-height: 3.4em;
+    
+}
+
+.img-inline-block {
+    display: inline-block;
+}
+
+.list-inline-block {
+    display: inline-block;
+}
+
+.footer-name {
+    padding-top: 12px;
+    margin-bottom: .4em;
+}
+
+.footer-titles {
+    margin: 0px;
+}
+
+.main-footer {
+    background-color: #710627;
+    color: #f5f3f5;
+}
+
+.main-footer-container {
+    color: #f5f3f5;
+    padding: 18px;
+    padding-top: 0;
+}
+
+.gallery-picture {
+    max-width: 45%;
+    max-height: 45%;
+}
+
+
+.soaps-pic-container {
+    max-width: 1000px;
+}
+
+.gallery-inline-block {
+    display: inline-block;
+}
+
