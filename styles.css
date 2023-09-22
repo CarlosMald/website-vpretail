@@ -210,23 +210,63 @@ html, body {
     color: #f5f3f5;
 }
 
+.main-footer a {
+    color: #f5f3f5;
+    text-decoration: none;
+}
+
+.main-footer a:visited {
+    color: #f5f3f5;
+}
+
 .main-footer-container {
     color: #f5f3f5;
     padding: 18px;
     padding-top: 0;
 }
 
-.gallery-picture {
-    max-width: 45%;
-    max-height: 45%;
+.gallery-container {
+    display: flexbox;
 }
 
+.gallery-container2 {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.gallery-container2 div {
+    max-width: 451px;
+    overflow: hidden;
+}
+
+.gallery-picture1 {
+    max-width: 902px;
+}
+
+.gallery-picture2 {
+    max-width: 445px;
+}
 
 .soaps-pic-container {
     max-width: 1000px;
 }
 
-.gallery-inline-block {
-    display: inline-block;
+.gallery-div2 {
+    margin-right: 12px;
 }
 
+.about-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.about-picture1 {
+    max-width: 450px;
+    
+}
+
+.owner-contact {
+    text-align: center;
+}
