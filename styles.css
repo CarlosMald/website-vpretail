@@ -257,16 +257,35 @@ html, body {
 }
 
 .about-container {
-    display: flex;
-    align-items: center;
-    margin-top: 15px;
+    margin-top: 50px;
 }
 
 .about-picture1 {
     max-width: 450px;
-    
+}
+
+.owner-pic-inline {
+    display: inline-block;
+}
+
+.owner-pic {
+    max-width: 450px;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .owner-contact {
+    vertical-align: top;
+    margin-left: 40px;
+    padding-top: 120px;
     text-align: center;
+    margin-right: 30px;
+}
+
+.owner-contact-inline {
+    display: inline-block;
+}
+
+.owner-info {
+    margin: 0px;
 }
